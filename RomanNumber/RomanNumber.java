@@ -1,14 +1,8 @@
 package dev;
 
-/**
- * The Class RomanNumber.
- */
 public class RomanNumber {
 
-	/** The symbols. */
 	private static final String[] SYMBOLS = { "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" };
-
-	/** The values. */
 	private static final int[] VALUES = { 100, 90, 50, 40, 10, 9, 5, 4, 1 };
 
 	public String convertToRoman(int n) {
