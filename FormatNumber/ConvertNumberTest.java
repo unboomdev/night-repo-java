@@ -67,6 +67,16 @@ public class ConvertNumberTest {
 		assertEquals("12.3M", a.formatNumber(12345678L));
 	}
 
+	@Test
+	public void test10() {
+		assertEquals("123B", a.formatNumber(123123123123L));
+	}
+
+	@Test
+	public void test11() {
+		assertEquals("99T", a.formatNumber(123123123123123L));
+	}
+
 	@After
 	public void tearDown() {
 		a = null;
