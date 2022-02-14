@@ -144,13 +144,13 @@ public class FindShortestNode {
 				System.out.println("Lost way!!\n");
 			}
 			
-			return loadAdnotherSave(listNodeDb, input, listPossible, listSavePoint);
+			return loadAnotherSave(listNodeDb, input, listPossible, listSavePoint);
 		}
 		
 		saveNode(listMain, nodeNext);
 		if (listSearching.isEmpty()) {
 			System.out.println("Dead end!!\n");
-			return loadAdnotherSave(listNodeDb, input, listPossible, listSavePoint);
+			return loadAnotherSave(listNodeDb, input, listPossible, listSavePoint);
 		} else {
 			if (listSearching.size() > 1) {
 				List<NodeTemp> listAnotherSave = new ArrayList<>();
@@ -166,7 +166,7 @@ public class FindShortestNode {
 		}
 	}
 	
-	private List<List<NodeTemp>> loadAdnotherSave(List<NodeModel> listNodeDb, InputModel input,
+	private List<List<NodeTemp>> loadAnotherSave(List<NodeModel> listNodeDb, InputModel input,
 			List<List<NodeTemp>> listPossible, List<List<NodeTemp>> listSavePoint) {
 		
 		if (listSavePoint.isEmpty()) {
